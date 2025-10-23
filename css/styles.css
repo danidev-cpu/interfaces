@@ -1,0 +1,34 @@
+body {
+  background-color: lightgray;
+}
+
+#barra-navegacion {
+  background-color: #0050c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+#logo {
+  padding-top: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.enlace {
+  align-content: center;
+  text-decoration: none;
+  color: white;
+  size: 20%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}

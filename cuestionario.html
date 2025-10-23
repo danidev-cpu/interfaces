@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <header>
+    <nav id="barra-navegacion">
+      <a href="inicio.html" class="enlace-logo">
+        <img id="logo" src="img/logo.png" alt="Logo de DaniReps" />
+      </a>
+      <ul class="menu">
+        <li><a href="inicio.html" class="enlace">Inicio</a></li>
+        <li><a href="productos.html" class="enlace">Productos</a></li>
+        <li><a href="cuestionario.html" class="enlace">Cuestionario</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <label for="nombre"><strong>Nombre completo:</strong></label
+    ><br />
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      required
+      style="width: 100%; padding: 8px; margin: 8px 0"
+    /><br />
+
+    <label for="dni"><strong>DNI:</strong></label
+    ><br />
+    <input
+      type="text"
+      id="dni"
+      name="dni"
+      required
+      maxlength="9"
+      placeholder="12345678A"
+      style="width: 100%; padding: 8px; margin: 8px 0"
+    /><br />
+
+    <label for="correo"><strong>Correo electrónico:</strong></label
+    ><br />
+    <input
+      type="email"
+      id="correo"
+      name="correo"
+      required
+      placeholder="ejemplo@correo.com"
+      style="width: 100%; padding: 8px; margin: 8px 0"
+    /><br />
+
+    <label for="productos"><strong>Productos deseados:</strong></label
+    ><br />
+    <textarea
+      id="productos"
+      name="productos"
+      rows="5"
+      maxlength="300"
+      placeholder="Escribe aquí los productos que deseas comprar..."
+      style="width: 100%; padding: 8px; margin: 8px 0"
+    ></textarea
+    ><br />
+
+    <div style="text-align: center">
+      <input
+        type="submit"
+        value="Enviar"
+        style="
+          background-color: cadetblue;
+          color: white;
+          border: none;
+          margin-right: 10px;
+          cursor: pointer;
+        "
+      />
+      <input
+        type="reset"
+        value="Borrar"
+        style="
+          background-color: lightgray;
+          color: black;
+          border: none;
+          cursor: pointer;
+        "
+      />
+    </div>
+  </body>
+</html>
