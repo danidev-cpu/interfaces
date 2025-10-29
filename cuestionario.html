@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cuestionario - DaniReps</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
- <div id="barra-navegacion">
+
+  <body>
+    <div id="barra-navegacion">
       <div class="enlace-logo">
         <a href="landingPage.html">
           <img id="logo" src="img/logo.png" alt="Logo de DaniReps" />
         </a>
       </div>
+
       <div class="menu">
         <div class="divs-menu">
           <a href="landingPage.html" class="enlace">Landing Page</a>
@@ -22,77 +25,43 @@
         <div class="divs-menu">
           <a href="productos.html" class="enlace">Productos</a>
         </div>
-        
       </div>
     </div>
-  <body>
-    <label for="nombre"><strong>Nombre completo:</strong></label
-    ><br />
-    <input
-      type="text"
-      id="nombre"
-      name="nombre"
-      required
-      style="width: 100%; padding: 8px; margin: 8px 0"
-    /><br />
 
-    <label for="dni"><strong>DNI:</strong></label
-    ><br />
-    <input
-      type="text"
-      id="dni"
-      name="dni"
-      required
-      maxlength="9"
-      placeholder="12345678A"
-      style="width: 100%; padding: 8px; margin: 8px 0"
-    /><br />
+    <main>
+      <form>
+        <label for="nombre"><strong>Nombre completo:</strong></label
+        ><br />
+        <input
+          class="input-nombre"
+          type="text"
+          id="nombre"
+          name="nombre"
+        /><br />
 
-    <label for="correo"><strong>Correo electrónico:</strong></label
-    ><br />
-    <input
-      type="email"
-      id="correo"
-      name="correo"
-      required
-      placeholder="ejemplo@correo.com"
-      style="width: 100%; padding: 8px; margin: 8px 0"
-    /><br />
+        <label for="dni"><strong>DNI:</strong></label
+        ><br />
+        <input class="input-dni" type="text" id="dni" name="dni" /><br />
 
-    <label for="productos"><strong>Productos deseados:</strong></label
-    ><br />
-    <textarea
-      id="productos"
-      name="productos"
-      rows="5"
-      maxlength="300"
-      placeholder="Escribe aquí los productos que deseas comprar..."
-      style="width: 100%; padding: 8px; margin: 8px 0"
-    ></textarea
-    ><br />
+        <label for="correo"><strong>Correo electrónico:</strong></label
+        ><br />
+        <input
+          class="input-email"
+          type="email"
+          id="correo"
+          name="correo"
+        /><br />
 
-    <div style="text-align: center">
-      <input
-        type="submit"
-        value="Enviar"
-        style="
-          background-color: cadetblue;
-          color: white;
-          border: none;
-          margin-right: 10px;
-          cursor: pointer;
-        "
-      />
-      <input
-        type="reset"
-        value="Borrar"
-        style="
-          background-color: lightgray;
-          color: black;
-          border: none;
-          cursor: pointer;
-        "
-      />
-    </div>
+        <label for="productos"><strong>Productos deseados:</strong></label
+        ><br />
+        <textarea class="productos" id="productos" name="productos"></textarea
+        ><br />
+
+        <div class="botones-form">
+          <input type="submit" value="Enviar" class="btn-enviar" />
+          <input type="reset" value="Borrar" class="btn-borrar" />
+        </div>
+      </form>
+    </main>
   </body>
 </html>
