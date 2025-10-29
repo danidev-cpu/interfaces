@@ -12,7 +12,7 @@ body {
     rgba(15, 25, 60, 1) 0%,
     rgba(30, 70, 110, 0.9) 60%,
     rgba(90, 140, 170, 0.7) 100%
-  ); /*color del fondo degradado */
+  ); /*color degradado degradado */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,15 +88,10 @@ table {
   color: white;
 }
 
-#fueraTemporada h3,
-#temporadaAlta h3,
-#fueraStock h3 {
+h3 {
   text-align: center;
 }
 
-#fueraTemporada table,
-#temporadaAlta table,
-#fueraStock table,
 main table {
   background-color: aliceblue;
   margin: auto;
@@ -107,7 +102,7 @@ table img {
   background-color: white;
   width: 100%;
   height: 200px;
-  max-width: 200px; /* límite máximo */
+  max-width: 200px; 
   object-fit: contain;
   background-color: white;
   border-radius: 8px;
