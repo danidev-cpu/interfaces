@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School cafeteria - Login</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand bg-info-subtle py-3 shadow-sm">
+      <div
+        class="container-fluid px-4 d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand d-flex align-items-center" href="menu.html">
+          <img src="img/logo.png" width="70" height="70" alt="Logo" />
+          <span class="ms-3 fw-bold fs-5 text-dark">SCHOOL CAFETERIA</span>
+        </a>
+
+        <ul class="navbar-nav d-flex flex-row gap-3 align-items-center mb-0">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-dark" href="loginpage.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-dark" href="menu.html"
+              >Servicios</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-dark" href="cuestionario.html"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="loginpage.html">
+              <img
+                src="img/usuario.png"
+                width="50"
+                height="50"
+                alt="Usuario"
+                class="rounded-circle border border-light shadow-sm"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="d-flex flex-column justify-content-center align-items-center vh-100"
+    >
+      <a href="menu.html" class="mb-4">
+        <img src="img/logo.png" alt="logo" width="150" height="150" />
+      </a>
+
+      <div
+        class="card shadow-lg p-4"
+        style="width: 400px; background-color: #60a5fa"
+      >
+        <h4 class="text-center mb-4 text-white fw-bold">Iniciar Sesión</h4>
+
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white"
+              >Correo electrónico</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="nombre@ejemplo.com"
+            />
+            <div class="form-text text-light">
+              Nunca compartiremos tu correo con nadie más.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label text-white"
+              >Contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="••••••••"
+            />
+          </div>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="remember" />
+            <label class="form-check-label text-white" for="remember">
+              Recuérdame
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 fw-semibold">
+            Entrar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-4A1Y3fL1xVZMK5vZ3D7LdQqpiJrFZ7uF8jDw2QvJ8h8R1hC27Oa5pK4qM5T3cV2l"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
